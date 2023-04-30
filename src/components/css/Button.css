@@ -1,0 +1,20 @@
+@import '../../App.css';
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 16px;
+  outline: none;
+  border: none;
+  font-size: var(--font-size-sectionTitle);
+  color: var(--secondary3-color);
+  cursor: pointer;
+  background-color: var(--primary1-color);
+}
+
+.btn:hover {
+  transition: all 0.3s ease-out;
+  background-color: transparent;
+  color: var(--primary1-color);
+  outline: 2px solid var(--primary1-color);
+  transition: all 0.3s ease-out;
+}

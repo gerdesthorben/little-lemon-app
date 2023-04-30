@@ -1,38 +1,34 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+    /* Colors */
+    --primary1-color: #495e57;
+    --primary2-color: #F4ce14;
+    --secondary1-color: #ee9972;
+    --secondary2-color: #fbdabb;
+    --secondary3-color: #edefee;
+    --secondary4-color: #333333;
+
+    /* Fonts */
+    --font-family-primary: 'Helvetica Neue', Arial, sans-serif;
+    --font-family-secondary: 'Times New Roman', Times, serif;
+    --font-size-display: 4rem; /* equivalent to 64pt */
+    --font-size-subTitle: 2.5rem; /* equivalent to 40pt */
+    --font-size-leadText: 1.125rem; /* equivalent to 18pt */
+    --font-size-sectionTitle: 1.25rem; /* equivalent to 20pt */
+    --font-size-cardTitle: 1.125rem; /* equivalent to 18pt */
+    --font-size-paragraph: 1rem; /* equivalent to 16pt */
+    --font-size-highlight: 1rem; /* equivalent to 16pt */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about, .menu, .reservation, .login, .order {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
 }

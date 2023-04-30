@@ -1,0 +1,40 @@
+@import '../../App.css';
+
+.dropdown-menu {
+    width: fit-content;
+    position: absolute;
+    top: 80px;
+    list-style: none;
+    text-align: start;
+  }
+
+  .dropdown-menu li {
+    cursor: pointer;
+  }
+
+  .dropdown-menu.clicked {
+    display: none;
+  }
+
+  .dropdown-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: var(--primary1-color);
+    border-radius: 16px;
+    border: 2px solid var(--secondary3-color);
+    background-color: var(--secondary3-color);
+    padding: 0.5rem 1rem;
+  }
+
+  .dropdown-link:hover {
+    color: var(--secondary3-color);
+    background-color: var(--primary1-color);
+  }
+
+  @media screen and (max-width: 960px) {
+    .fa-caret-down {
+      display: none;
+    }
+  }

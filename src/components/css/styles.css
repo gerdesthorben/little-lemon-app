@@ -1,0 +1,27 @@
+@import '../../App.css';
+
+html {
+    font-size: 16px;
+}
+
+img {
+  border-radius: 16px;
+}
+
+header {
+    background-color: var(--primary1-color);
+    color: var(--primary2-color);
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: var(--secondary3-color);
+    color: var(--primary1-color);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

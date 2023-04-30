@@ -1,0 +1,32 @@
+@import '../../App.css';
+
+.footer {
+    background-color: var(--primary1-color);
+    color: var(--primary2-color);
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    padding: 4rem 0rem;
+}
+.footer img {
+    background: var(--secondary3-color);
+    padding: 0 1rem;
+}
+footer ul{
+    list-style-type: none;
+}
+.footer .title {
+    font-size: var(--font-size-sectionTitle);
+    text-decoration: underline;
+    color: var(--secondary4-color);
+    margin-bottom: 1rem;
+}
+footer a {
+    text-decoration: none;
+    color: var(--primary2-color);
+}
+footer a:hover {
+    text-decoration: underline var(--secondary1-color);
+}
