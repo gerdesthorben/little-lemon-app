@@ -25,9 +25,19 @@
     --font-size-highlight: 1rem; /* equivalent to 16pt */
 }
 
-.about, .menu, .reservation, .login, .order {
+html, body {
+    font-size: 16px;
+    min-height: 100%;
+}
+
+img {
+  border-radius: 16px;
+}
+
+.about, .menu, .login, .order {
+    background-color: var(--secondary3-color);
     display: flex;
-    height: 90vh;
+    height: 80vh;
     align-items: center;
     justify-content: center;
     font-size: 3rem;

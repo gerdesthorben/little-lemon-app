@@ -68,21 +68,21 @@
     .nav-menu {
       display: flex;
       flex-direction: column;
-      width: 40%;
+      width: 50%;
       height: auto;
       position: absolute;
-      top: 85px;
-      left: 105%;
+      top: 80px;
+      left: -100%;
       opacity: 1;
-      transition: all 0.5s ease;
+      /* transition: all 0.5s ease; */
       background-color: var(--secondary3-color);
-      border-radius: 16px;
+      border-radius: 16px 0 16px 16px;
     }
 
     .nav-menu.active {
-      left: 60%;
+      left: 50%;
       opacity: 1;
-      transition: all 0.5s ease;
+      /* transition: all 0.5s ease; */
       z-index: 1;
     }
 
@@ -145,7 +145,7 @@
       transition: all 0.3s ease-out;
     }
 
-    button {
+    .btn {
       display: none;
     }
   }

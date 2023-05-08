@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import './components/css/styles.css';
 
-import Header from './components/Header';
 import Nav from './components/Nav';
 import Main from './components/Main';
 import Footer from './components/Footer';
@@ -19,14 +18,13 @@ function App() {
     <Router>
       <Nav />
       <Routes>
-        <Route path='/about' exact element={About} />
-        <Route path='/menu' exact element={Menu} />
-        <Route path='/reserve' exact element={Reservation} />
-        <Route path='/order' exact element={Order} />
-        <Route path='/login' exact element={Login} />
+        <Route path='/' exact element={<Main />} />
+        <Route path='/about' exact element={<About />} />
+        <Route path='/menu' exact element={<Menu />} />
+        <Route path='/reserve' exact element={<Reservation />} />
+        <Route path='/order' exact element={<Order />} />
+        <Route path='/login' exact element={<Login />} />
       </Routes>
-      <Header />
-      <Main />
       <Footer />
     </Router>
   );

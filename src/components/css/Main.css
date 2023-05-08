@@ -1,0 +1,208 @@
+@import '../../App.css';
+
+.main {
+    color: var(--secondary4-color);
+    background-color: var(--secondary3-color);
+}
+
+/* ---------------------- Specials ---------------------- */
+.specials {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 6rem 10%;
+    height: auto;
+}
+
+.specials-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    /* outline: 2px dashed blue; */
+}
+.specials-top * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* outline: 1px dashed green; */
+}
+.specials-top h1 {
+    font-size: var(--font-size-subTitle);
+    /* margin-left: 5rem; */
+}
+.order-button {
+    border-radius: 16px;
+    width: fit-content;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: var(--primary2-color);
+    padding: 1rem 1.25rem;
+    /* margin-right: 5rem; */
+    font-size: var(--font-size-sectionTitle);
+    text-decoration: none;
+    color: var(--secondary4-color);
+}
+
+.specials-group {
+    margin-top: 3rem;
+    width: 80%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    width: fit-content;
+
+    /* outline: 2px dashed red; */
+}
+
+.specials-item {
+    background-color: #e3e2e2d6;
+    border-radius: 16px;
+    box-shadow: 0 1px 1px 1px #33333373;
+    display: grid;
+    grid-template-rows: 50% 1fr auto 1fr;
+
+    /* outline: 2px dashed purple; */
+}
+.specials-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+.specials-horizontal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.specials-horizontal * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 1rem 0 0 1rem; */
+
+    /* outline: 2px dashed purple; */
+}
+.specials-horizontal .price {
+    color: var(--secondary1-color);
+    /* padding-left: 5rem; */
+    font-weight: bold;
+}
+.specials-desc {
+    padding: 1rem;
+}
+.delivery-button {
+    padding: 1rem;
+    color: var(--secondary4-color);
+    font-weight: bolder;
+    text-decoration: none;
+    margin-top: auto;
+
+    /* outline: 2px dashed red; */
+}
+@media screen and (max-width: 960px) {
+    .specials-group {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* ---------------------- Testimonials ---------------------- */
+.testimonials {
+    width: 100%;
+    padding: 6rem 10%;
+    background-color: var(--primary1-color);
+    display: flex;
+    flex-direction: column;
+}
+.testimonials h1 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    font-size: var(--font-size-subTitle);
+    color: var(--primary2-color);
+}
+.testimonials-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+.testimonials-item {
+    background-color: var(--secondary3-color);
+    border-radius: 16px;
+}
+.testimonials-item h3 {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 0.5rem 0;
+}
+.testimonials-horizontal {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0 0.5rem 0;
+}
+.testimonials-image {
+    background-color: var(--primary2-color);
+    padding: 0.5rem;
+}
+.testimonials-review {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+}
+@media screen and (max-width: 960px) {
+    .testimonials-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+
+/* ---------------------- Details ---------------------- */
+.details {
+    background-color: var(--secondary3-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 6rem 10%;
+}
+
+.details-left {
+    padding: 2rem;
+}
+.details-left h1 {
+    font-size: var(--font-size-subTitle);
+    color: var(--primary1-color);
+}
+.details-left h2 {
+    font-size: 1.75rem;
+    color: var(--primary2-color);
+    padding-top: 1rem;
+}
+.details-left p {
+    padding-top: 3rem;
+    font-weight: bolder;
+}
+
+.details-right {
+    position: relative;
+}
+.details-back {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 50%;
+    height: 75%;
+    object-fit: cover;
+}
+.details-front {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    width: 50%;
+    height: 75%;
+    object-fit: cover;
+}

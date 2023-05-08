@@ -5,9 +5,9 @@
   border-radius: 16px;
   outline: none;
   border: none;
+  cursor: pointer;
   font-size: var(--font-size-sectionTitle);
   color: var(--secondary3-color);
-  cursor: pointer;
   background-color: var(--primary1-color);
 }
 

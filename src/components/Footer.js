@@ -7,15 +7,7 @@ const Footer = () => {
     return (
         <footer className='footer'>
             <img src={Logo} width={150} alt='Logo'></img>
-            {/* <ul>
-                <li className='title'>Links</li>
-                <li><a href='/#home'>Home</a></li>
-                <li><a href='/#about'>About</a></li>
-                <li><a href='/#menu'>Menu</a></li>
-                <li><a href='/#reserve'>Reservation</a></li>
-                <li><a href='/#order'>Order Online</a></li>
-                <li><a href='/#login'>Login</a></li>
-            </ul> */}
+
             <ul className='footer-menu'>
                 <h1 className='title'>Links</h1>
                 <li className='footer-item'>
@@ -42,14 +34,14 @@ const Footer = () => {
                 <h1 className='title'>Contact</h1>
                 <li>Test Street 5</li>
                 <li>Ney York, USA</li>
-                <li><Link>+43 158 24859146</Link></li>
-                <li><Link>littlelemon@gmail.com</Link></li>
+                <li><Link className='footer-links'>+12 345 6789</Link></li>
+                <li><Link className='footer-links'>littlelemon@test.com</Link></li>
             </ul>
 
             <ul className='footer-socials'>
                 <h1 className='title'>Socials</h1>
-                <li><Link to='https://www.instagram.com/'>Instagram</Link></li>
-                <li><Link to='https://www.twitter.com/'>Twitter</Link></li>
+                <li><Link to='https://www.instagram.com/' className='footer-links'>Instagram</Link></li>
+                <li><Link to='https://www.twitter.com/' className='footer-links'>Twitter</Link></li>
             </ul>
         </footer >
     );
